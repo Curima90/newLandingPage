@@ -1,33 +1,30 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Navtab from './Navtab'
+import Cards from './Card'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { Container, Button, Nav } from 'react-bootstrap'
+
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Navtab></Navtab>
+      <Container>
+        <Container className={'bg-light my-4'}>
+          <h1>A Warm Welcome!</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, non architecto? Odio quisquam molestiae iste facere! Dolor, perferendis corporis molestias atque doloribus exercitationem ab non voluptate quidem magni magnam delectus?</p>
+          <Button className={'btn-primary'} size="lg" active>
+            Primary button
+          </Button>{' '}
+        </Container>
+        <Cards></Cards>
+      </Container>
+      <Nav className={"d-flex justify-content-center p-4 bg-secondary"}>
+        <div>Copyright Your Website 2024</div>
+      </Nav>
     </>
   )
 }
