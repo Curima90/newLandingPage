@@ -17,12 +17,12 @@ function App() {
           <h1>A Warm Welcome!</h1>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, non architecto? Odio quisquam molestiae iste facere! Dolor, perferendis corporis molestias atque doloribus exercitationem ab non voluptate quidem magni magnam delectus?</p>
           <Button className={'btn-primary'} size="lg" active>
-            Primary button
+            Call to Action!
           </Button>{' '}
         </Container>
         <Cards></Cards>
       </Container>
-      <Nav className={"d-flex justify-content-center p-4 bg-secondary"}>
+      <Nav className={"d-flex justify-content-center p-4 bg-secondary text-light"}>
         <div>Copyright Your Website 2024</div>
       </Nav>
     </>
